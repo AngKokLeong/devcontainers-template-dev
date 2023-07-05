@@ -1,0 +1,76 @@
+{
+    "id": "java-mssql",
+    "version": "0.0.1",
+    "name": "Java & MSSQL",
+    "description": "Java template with MSSQL database",
+    "documentationURL": "https://github.com/devcontainers/template-starter/tree/main/src/hello",
+    "licenseURL": "https://github.com/devcontainers/template-starter/blob/main/LICENSE",
+    "options": {
+        "containerName": {
+            "type": "string",
+            "description": "Type in the name of the Java container: ",
+            "proposals": [
+                "JavaDevWithMSSQL"
+            ],
+            "default": "JavaDevWithMSSQL"
+        },
+        "sqlServerContainerName": {
+            "type": "string",
+            "description": "Type in the name of the SQL Server container: ",
+            "proposals": [
+                "SQLServerDB"
+            ],
+            "default": "SQLServerDB"
+        },
+        "javaVersion": {
+            "type": "string",
+            "description": "Select Java Version:",
+            "proposals": [
+                "jammy",
+                "focal",
+                "bionic"
+            ],
+            "default": "jammy"
+        },
+        "sqlServerVersion": {
+            "type": "string",
+            "description": "Select the SQL Server version:",
+            "enum": [
+                "2022-latest",
+                "2019-latest",
+                "2017-latest"
+            ],
+            "default": "2022-latest"
+        },
+        "installMaven": {
+            "type": "boolean",
+            "description": "Install Maven build automation tool?",
+            "default": "false"
+        },
+        "configureMavenVersion": {
+            "type": "string",
+            "description": "Select the Maven build automation tool version to install:",
+            "enum": [
+                "3.9.2"
+            ],
+            "default": "3.9.2"
+        },
+        "installGradle": {
+            "type": "boolean",
+            "description": "Install Gradle build automation tool?",
+            "default": "false"
+        },
+        "configureGradleVersion": {
+            "type": "string",
+            "description": "Select the Gradle build automation tool version to install:",
+            "enum": [
+                "2.1.0",
+                ""
+            ],
+            "default": "2.1.0"
+        }
+    },
+    "platforms": [
+        "Java"
+    ]
+}
